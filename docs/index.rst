@@ -3,18 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Guia diff-in-diff com R e Rstudio's documentation!
-=============================================================
+Primeiros passos
+================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :caption: Primeiros passos
+   :hidden:
 
+   intro/motivacao
+   intro/instalacao
 
+R básico
+========
 
-Indices and tables
-==================
+.. toctree::
+   :caption: R básico
+   :hidden:
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   r101/basico
+   r101/variaveis

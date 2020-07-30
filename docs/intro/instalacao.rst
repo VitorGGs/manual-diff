@@ -1,0 +1,6 @@
+Instalacao
+==========
+
+.. warning::
+
+	Atencao
