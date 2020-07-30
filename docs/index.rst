@@ -3,8 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Primeiros passos
-================
+Bem Vindos!
+===========
+
+
+
+
 
 .. toctree::
    :caption: Primeiros passos
@@ -12,13 +16,13 @@ Primeiros passos
 
    intro/motivacao
    intro/instalacao
-
-R básico
-========
+   intro/rstudio
 
 .. toctree::
-   :caption: R básico
+   :caption: R Básico
    :hidden:
 
-   r101/basico
-   r101/variaveis
+   r101/introdução
+   r101/objetos
+   r101/funções
+   r101/gráficos

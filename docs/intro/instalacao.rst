@@ -1,4 +1,4 @@
-Instalacao
+Instalação
 ==========
 
 .. warning::
