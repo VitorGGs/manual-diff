@@ -11,6 +11,13 @@ Este é um guia de como mensurar os impactos das políticas da FAP-DF. Nele voc�
 *Em construção*
 
 
+.. hint::
+   
+   dica
+
+.. warning::
+   
+   aviso
 
 =====
 F.A.Q

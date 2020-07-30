@@ -92,9 +92,27 @@
 <p class="caption"><span class="caption-text">R Básico</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Introdução</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#elementos-essencias">Elementos Essencias</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#operadores-e-sequencias">Operadores e Sequências</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#estruturas-de-repeticao">Estruturas de repetição</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#elementos-essencias">Elementos Essencias</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#como-pedir-ajuda">Como pedir ajuda?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pacotes">Pacotes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ambiente">Ambiente</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#operadores-e-sequencias">Operadores e Sequências</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#operadores-de-atribuicao">Operadores de Atribuição</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#operadores-aritmeticos">Operadores Aritméticos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#operadores-relacionais">Operadores Relacionais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#operadores-logicos">Operadores Lógicos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sequencias">Sequências</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sequencias-regulares">Sequências Regulares</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sequencia-aleatorias">Sequência Aleatórias</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#estruturas-de-repeticao">Estruturas de repetição</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#estruturas-condicionais">Estruturas Condicionais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Estruturas de Repetição</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="objetos.html">Objetos</a><ul>
@@ -118,6 +136,19 @@
 <li class="toctree-l2"><a class="reference internal" href="gráficos.html#graficos-com-ggplot">Gráficos com “ggplot”</a></li>
 </ul>
 </li>
+</ul>
+<p class="caption"><span class="caption-text">Econometria</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../econometria/introducao.html">Introdução</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../econometria/regressões.html">Regressões</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../econometria/did.html">Diferenças em Diferenças</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Prática</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pratica/introducao.html">Introdução</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pratica/regressao.html">Realizando a Regressão</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pratica/interpretando.html">Interpetrando os Resultados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pratica/mensurando.html">Mensurando o Impacto</a></li>
 </ul>
 
             
@@ -185,14 +216,277 @@
             
   <div class="section" id="introducao">
 <h1>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título">¶</a></h1>
+<p><em>Em construção</em></p>
 <div class="section" id="elementos-essencias">
 <h2>Elementos Essencias<a class="headerlink" href="#elementos-essencias" title="Link permanente para este título">¶</a></h2>
+<p><em>Em construção</em></p>
+<div class="section" id="como-pedir-ajuda">
+<h3>Como pedir ajuda?<a class="headerlink" href="#como-pedir-ajuda" title="Link permanente para este título">¶</a></h3>
+<p>No Rstudio</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Principais links do R</span>
+<span class="nf">help.start</span><span class="p">()</span>
+
+<span class="c1"># Abre a ajuda de uma função específica</span>
+<span class="nf">help</span><span class="p">(</span><span class="n">nome_da_funcao</span><span class="p">)</span>
+
+<span class="c1"># Demonstra funcionalidades do R e seus pacotes</span>
+<span class="nf">demo</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Online:</p>
+<ul class="simple">
+<li><p>Google</p></li>
+<li><p>Stackoverflow</p></li>
+<li><p>Github</p></li>
+<li><p>Log de erro</p></li>
+</ul>
+</div>
+<div class="section" id="pacotes">
+<h3>Pacotes<a class="headerlink" href="#pacotes" title="Link permanente para este título">¶</a></h3>
+<p><strong>Instalar pacotes</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instalando um pacote</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;tidyr&quot;</span><span class="p">)</span>
+
+<span class="c1"># Instalando vários pacotes</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;plyr&quot;</span><span class="p">,</span> <span class="s">&quot;tidyr&quot;</span><span class="p">,</span> <span class="s">&quot;dplyr&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Remover Pacotes</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Removendo um pacote</span>
+<span class="nf">remove.packages</span><span class="p">(</span><span class="s">&quot;tidyr&quot;</span><span class="p">)</span>
+
+<span class="c1"># Removendo vários pacotes</span>
+<span class="nf">remove.packages</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;plyr&quot;</span><span class="p">,</span> <span class="s">&quot;tidyr&quot;</span><span class="p">,</span> <span class="s">&quot;dplyr&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ambiente">
+<h3>Ambiente<a class="headerlink" href="#ambiente" title="Link permanente para este título">¶</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exibe a versão atual do R</span>
+<span class="n">version</span>
+
+<span class="c1"># Mostra tudo que está carregado no ambiente</span>
+<span class="nf">ls</span><span class="p">()</span>
+
+<span class="c1"># Retorna o diretório de trabalho atual</span>
+<span class="nf">getwd</span><span class="p">()</span>
+
+<span class="c1"># Lista as pastar e arquivos atual</span>
+<span class="nf">dir</span><span class="p">()</span>
+
+<span class="c1"># Define um caminho do diretório de trabalho</span>
+<span class="nf">setwd</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="operadores-e-sequencias">
 <h2>Operadores e Sequências<a class="headerlink" href="#operadores-e-sequencias" title="Link permanente para este título">¶</a></h2>
+<p><em>Em construção</em></p>
+<div class="section" id="operadores-de-atribuicao">
+<h3>Operadores de Atribuição<a class="headerlink" href="#operadores-de-atribuicao" title="Link permanente para este título">¶</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Atribuo o valor 5 à variável &#39;x&#39;</span>
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="m">5</span>
+
+<span class="c1"># Também é possível atribuir com =</span>
+<span class="n">x</span> <span class="o">=</span> <span class="m">5</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operadores-aritmeticos">
+<h3>Operadores Aritméticos<a class="headerlink" href="#operadores-aritmeticos" title="Link permanente para este título">¶</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Soma +</span>
+<span class="m">2</span> <span class="o">+</span> <span class="m">2</span>
+
+<span class="c1"># Subtração -</span>
+<span class="m">10</span> <span class="o">-</span> <span class="m">4</span>
+
+<span class="c1"># Multiplicação *</span>
+<span class="m">5</span> <span class="o">*</span> <span class="m">4</span>
+
+<span class="c1"># Divisão /</span>
+<span class="m">10</span> <span class="o">/</span> <span class="m">5</span>
+
+<span class="c1"># Exponenciação ^</span>
+<span class="m">3</span> <span class="o">^</span> <span class="m">2</span>
+
+<span class="c1"># Resto da divisão %%</span>
+<span class="m">10</span> <span class="o">%%</span> <span class="m">3</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operadores-relacionais">
+<h3>Operadores Relacionais<a class="headerlink" href="#operadores-relacionais" title="Link permanente para este título">¶</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># maior que &gt;</span>
+<span class="m">10</span> <span class="o">&gt;</span> <span class="m">2</span>
+
+<span class="c1"># menor que &lt;</span>
+<span class="m">3</span> <span class="o">&lt;</span> <span class="m">1</span>
+
+<span class="c1"># igual a ==</span>
+<span class="m">10</span> <span class="o">==</span> <span class="m">10</span>
+
+<span class="c1"># maior ou igual a &gt;=</span>
+<span class="m">5</span> <span class="o">&gt;=</span> <span class="m">5</span>
+
+<span class="c1"># menor ou igual a &lt;=</span>
+<span class="m">3</span> <span class="o">&lt;=</span> <span class="m">4</span>
+
+<span class="c1"># diferente de !=</span>
+<span class="m">7</span> <span class="o">!=</span> <span class="m">6</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operadores-logicos">
+<h3>Operadores Lógicos<a class="headerlink" href="#operadores-logicos" title="Link permanente para este título">¶</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Retorna verdadeiro se ambas as condições forem verdadeiras</span>
+<span class="m">10</span> <span class="o">&gt;</span> <span class="m">5</span> <span class="o">&amp;</span> <span class="m">6</span> <span class="o">&lt;</span> <span class="m">13</span>
+
+<span class="c1"># Retorna verdadeiro se pelo menos uma condição for verdadeira</span>
+<span class="m">3</span> <span class="o">&gt;</span> <span class="m">2</span> <span class="o">|</span> <span class="m">10</span> <span class="o">&gt;</span> <span class="m">4</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sequencias">
+<h3>Sequências<a class="headerlink" href="#sequencias" title="Link permanente para este título">¶</a></h3>
+<dl class="simple">
+<dt>Função:</dt><dd><ul class="simple">
+<li><p>Loop</p></li>
+<li><p>Repetições</p></li>
+<li><p>Amostras aleatórios</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="sequencias-regulares">
+<h3>Sequências Regulares<a class="headerlink" href="#sequencias-regulares" title="Link permanente para este título">¶</a></h3>
+<p><strong>rep( ) e :</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># repete 10 vezes o número 4</span>
+<span class="nf">rep</span><span class="p">(</span><span class="m">4</span><span class="p">,</span> <span class="m">10</span><span class="p">)</span>
+
+<span class="c1"># cria uma sequência de 0 à 5</span>
+<span class="m">0</span><span class="o">:</span><span class="m">5</span>
+</pre></div>
+</div>
+<p><strong>seq( )</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># de 0 a 10</span>
+<span class="nf">seq</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">to</span> <span class="o">=</span> <span class="m">10</span><span class="p">)</span>
+
+<span class="c1"># de 0 a 10, de 2 em 2</span>
+<span class="nf">seq</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">to</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">by</span> <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+
+<span class="c1"># sequência com 10 número entre 0 e 1</span>
+<span class="nf">seq</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">to</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">length.out</span> <span class="o">=</span> <span class="m">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sequencia-aleatorias">
+<h3>Sequência Aleatórias<a class="headerlink" href="#sequencia-aleatorias" title="Link permanente para este título">¶</a></h3>
+<p><strong>sample( )</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># cria uma sequência de 1 a 50</span>
+<span class="n">seq</span> <span class="o">&lt;-</span> <span class="m">1</span><span class="o">:</span><span class="m">50</span>
+
+<span class="c1"># cria uma amostra com 10 elementos da sequência &#39;seq&#39;</span>
+<span class="n">y</span> <span class="o">&lt;-</span> <span class="nf">sample</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">seq</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">10</span><span class="p">)</span>
+
+<span class="c1"># O mesmo que o anterior mas com repetição</span>
+<span class="n">z</span> <span class="o">&lt;-</span> <span class="nf">sample</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">seq</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Famílias de distribuição de probabilidades</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># as sequências terão 20 números</span>
+<span class="n">N</span> <span class="o">&lt;-</span> <span class="m">20</span>
+
+<span class="nf">runif</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="c1"># Uniforme</span>
+<span class="nf">rnorm</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="c1"># Normal</span>
+<span class="nf">rpois</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="c1"># Poisson</span>
+<span class="nf">rexp</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="c1"># Exponencial</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="estruturas-de-repeticao">
 <h2>Estruturas de repetição<a class="headerlink" href="#estruturas-de-repeticao" title="Link permanente para este título">¶</a></h2>
+<div class="section" id="estruturas-condicionais">
+<h3>Estruturas Condicionais<a class="headerlink" href="#estruturas-condicionais" title="Link permanente para este título">¶</a></h3>
+<p><strong>if</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">if</span><span class="p">(</span><span class="n">condição</span><span class="p">){</span>
+        <span class="n">faça</span> <span class="n">alguma</span> <span class="n">coisa</span>
+<span class="p">}</span>
+<span class="n">saia</span>
+
+
+<span class="c1"># exemplo</span>
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="m">1</span>
+<span class="c1"># se &#39;x&#39; for igual a 1, então imprima o valor de &#39;x&#39;</span>
+<span class="nf">if</span><span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="m">1</span><span class="p">){</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>else</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">if</span><span class="p">(</span><span class="n">condição</span><span class="p">){</span>
+        <span class="n">faça</span> <span class="n">alguma</span> <span class="n">coisa</span>
+<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
+        <span class="n">faça</span> <span class="n">outra</span> <span class="n">coisa</span>
+<span class="p">}</span>
+
+
+<span class="c1"># exemplo</span>
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="m">1</span>
+<span class="c1"># x não é igual a 2, então imprima &quot;estou no else&quot;</span>
+<span class="nf">if</span><span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="m">2</span><span class="p">){</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">&quot;estou no else&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>if - else - if</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">if</span><span class="p">(</span><span class="n">condição</span> <span class="m">1</span><span class="p">){</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">&quot;parei na condicao 1&quot;</span><span class="p">)</span>
+<span class="p">}</span> <span class="n">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">condicao</span> <span class="m">2</span><span class="p">){</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">&quot;parei na condicao 2&quot;</span><span class="p">)</span>
+<span class="p">}</span> <span class="n">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">condicao</span> <span class="m">3</span><span class="p">){</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">&quot;parei na condicao 3&quot;</span><span class="p">)</span>
+<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">&quot;nenhum condicao era verdade&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h3>Estruturas de Repetição<a class="headerlink" href="#id1" title="Link permanente para este título">¶</a></h3>
+<p><strong>for</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">for</span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="n">sequencia</span><span class="p">){</span>
+        <span class="n">faça</span> <span class="n">alguma</span> <span class="n">coisa</span> <span class="n">que</span> <span class="n">se</span> <span class="n">repete</span>
+<span class="p">}</span>
+
+
+<span class="c1"># exemplo: imprime os números de 0 a 5</span>
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="m">0</span><span class="o">:</span><span class="m">5</span>
+<span class="nf">for</span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="n">x</span><span class="p">){</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>while</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">inicio</span>
+<span class="nf">while</span><span class="p">(</span><span class="n">condicao</span><span class="p">){</span>
+        <span class="n">faça</span> <span class="n">alguma</span> <span class="n">coisa</span>
+<span class="p">}</span>
+<span class="n">atualizar</span> <span class="n">inicio</span>
+
+
+<span class="c1"># Exemplo: o código vai imprimir de 0 a 5</span>
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="m">0</span>
+<span class="nf">while</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;=</span> <span class="m">5</span><span class="p">){</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">&lt;-</span> <span class="n">x</span> <span class="o">+</span> <span class="m">1</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
