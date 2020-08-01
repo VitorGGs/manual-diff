@@ -341,3 +341,15 @@ Estruturas de Repetição
 		print(x)
 		x <- x + 1
 	}
+
+**repeat**
+
+.. code-block:: r
+
+	repeat{
+		if(condicao){
+			break
+		} else {
+			faca isso
+		}
+	}
