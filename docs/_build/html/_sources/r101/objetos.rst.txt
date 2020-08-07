@@ -179,6 +179,22 @@ Fatores
 Data frames e Listas
 ====================
 
+- Listas são estruturas em R que podem armazenar vários objetos de tipos diversos.
+- Listas são criadas com list( ) e as.list( )
+- Podem ser acessadas com operador x[i] ou $(quando nomeadas)
+- Você pode aninhar listas dentro de listas
+  
+
+.. code-block:: r
+
+	enlatados <- c("molho de tomate", "atum", "milho")
+	frios <- c("queijo", "requeijao", "iorgute" )
+	orcamento <- c(50, 70)
+
+	compras <- list(enlatados = enlatados, frios = frios, orcamento = orcamento)
+
+
+
 =================
 Classes e Coerção
 =================

@@ -390,6 +390,19 @@
 </div>
 <div class="section" id="data-frames-e-listas">
 <h2>Data frames e Listas<a class="headerlink" href="#data-frames-e-listas" title="Link permanente para este título">¶</a></h2>
+<ul class="simple">
+<li><p>Listas são estruturas em R que podem armazenar vários objetos de tipos diversos.</p></li>
+<li><p>Listas são criadas com list( ) e as.list( )</p></li>
+<li><p>Podem ser acessadas com operador x[i] ou $(quando nomeadas)</p></li>
+<li><p>Você pode aninhar listas dentro de listas</p></li>
+</ul>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">enlatados</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;molho de tomate&quot;</span><span class="p">,</span> <span class="s">&quot;atum&quot;</span><span class="p">,</span> <span class="s">&quot;milho&quot;</span><span class="p">)</span>
+<span class="n">frios</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;queijo&quot;</span><span class="p">,</span> <span class="s">&quot;requeijao&quot;</span><span class="p">,</span> <span class="s">&quot;iorgute&quot;</span> <span class="p">)</span>
+<span class="n">orcamento</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">50</span><span class="p">,</span> <span class="m">70</span><span class="p">)</span>
+
+<span class="n">compras</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span><span class="n">enlatados</span> <span class="o">=</span> <span class="n">enlatados</span><span class="p">,</span> <span class="n">frios</span> <span class="o">=</span> <span class="n">frios</span><span class="p">,</span> <span class="n">orcamento</span> <span class="o">=</span> <span class="n">orcamento</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="classes-e-coercao">
 <h2>Classes e Coerção<a class="headerlink" href="#classes-e-coercao" title="Link permanente para este título">¶</a></h2>
