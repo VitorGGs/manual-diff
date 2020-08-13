@@ -193,12 +193,64 @@ Data frames e Listas
 
 	compras <- list(enlatados = enlatados, frios = frios, orcamento = orcamento)
 
+-----------
+Data Frames
+-----------
+
+- Pense em planilhas do excel
+- Linha são variáveis e colunas são observações (ou vice-versa)
+  
+
+.. code-block:: r
+
+	# construir
+	data.frame()
+	#ou
+	as.data.frame()
+
+	# primeiras e ultimas linhas
+	head()
+	tail()
+
+	# adicionar coluna
+	df$nova_coluna = c(1,2,3)
+	cbind()
+
+	# split de df's
+	subset()
+	split()
+
+	# adicionar linha
+	rbind()
 
 
-=================
-Classes e Coerção
-=================
+===================
+Classes e Conversão
+===================
+
+- A classe é a identidade do objeto e o R vai tratar esse objeto de acordo com seu tipo
+- Um objeto pode ter sua classe mudada
+  
+.. code-block:: r
+
+	# 
+
 
 =====
 Datas
 =====
+
+- Formato POSIX
+- % para formatação
+
+.. code-block:: r
+
+   # principais funções
+   as.Date()
+   Sys.Date()
+   Sys.time()
+
+   # pacote lubridate
+   library(lubridate)
+
+   

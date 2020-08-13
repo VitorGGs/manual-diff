@@ -137,8 +137,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#fatores">Fatores</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#data-frames-e-listas">Data frames e Listas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#classes-e-coercao">Classes e Coerção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-frames-e-listas">Data frames e Listas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-frames">Data Frames</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#classes-e-conversao">Classes e Conversão</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#datas">Datas</a></li>
 </ul>
 </li>
@@ -403,12 +406,60 @@
 <span class="n">compras</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span><span class="n">enlatados</span> <span class="o">=</span> <span class="n">enlatados</span><span class="p">,</span> <span class="n">frios</span> <span class="o">=</span> <span class="n">frios</span><span class="p">,</span> <span class="n">orcamento</span> <span class="o">=</span> <span class="n">orcamento</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="section" id="data-frames">
+<h3>Data Frames<a class="headerlink" href="#data-frames" title="Link permanente para este título">¶</a></h3>
+<ul class="simple">
+<li><p>Pense em planilhas do excel</p></li>
+<li><p>Linha são variáveis e colunas são observações (ou vice-versa)</p></li>
+</ul>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># construir</span>
+<span class="nf">data.frame</span><span class="p">()</span>
+<span class="c1">#ou</span>
+<span class="nf">as.data.frame</span><span class="p">()</span>
+
+<span class="c1"># primeiras e ultimas linhas</span>
+<span class="nf">head</span><span class="p">()</span>
+<span class="nf">tail</span><span class="p">()</span>
+
+<span class="c1"># adicionar coluna</span>
+<span class="n">df</span><span class="o">$</span><span class="n">nova_coluna</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">)</span>
+<span class="nf">cbind</span><span class="p">()</span>
+
+<span class="c1"># split de df&#39;s</span>
+<span class="nf">subset</span><span class="p">()</span>
+<span class="nf">split</span><span class="p">()</span>
+
+<span class="c1"># adicionar linha</span>
+<span class="nf">rbind</span><span class="p">()</span>
+</pre></div>
 </div>
-<div class="section" id="classes-e-coercao">
-<h2>Classes e Coerção<a class="headerlink" href="#classes-e-coercao" title="Link permanente para este título">¶</a></h2>
+</div>
+</div>
+<div class="section" id="classes-e-conversao">
+<h2>Classes e Conversão<a class="headerlink" href="#classes-e-conversao" title="Link permanente para este título">¶</a></h2>
+<ul class="simple">
+<li><p>A classe é a identidade do objeto e o R vai tratar esse objeto de acordo com seu tipo</p></li>
+<li><p>Um objeto pode ter sua classe mudada</p></li>
+</ul>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="datas">
 <h2>Datas<a class="headerlink" href="#datas" title="Link permanente para este título">¶</a></h2>
+<ul class="simple">
+<li><p>Formato POSIX</p></li>
+<li><p>% para formatação</p></li>
+</ul>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># principais funções</span>
+<span class="nf">as.Date</span><span class="p">()</span>
+<span class="nf">Sys.Date</span><span class="p">()</span>
+<span class="nf">Sys.time</span><span class="p">()</span>
+
+<span class="c1"># pacote lubridate</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">lubridate</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 
