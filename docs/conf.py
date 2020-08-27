@@ -61,5 +61,10 @@ html_static_path = ['_static']
 
 #opções 
 html_theme_options = {
-	'collapse_navigation': False
+	'collapse_navigation': False,
+	'logo_only': False,
 }
+
+html_css_files = [
+    'css/custom.css',
+]
