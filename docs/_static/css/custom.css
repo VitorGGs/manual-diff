@@ -1,0 +1,8 @@
+.rst-content pre.literal-block,
+.rst-content div[class^="highlight"] pre,
+.rst-content .linenodiv pre {
+    /* Increase the font size and line height in code blocks */
+    background-color: #e2e2e2;
+    font-size: 15px;
+    line-height: 1.5;
+}
