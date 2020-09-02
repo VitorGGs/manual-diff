@@ -6,3 +6,7 @@
     font-size: 15px;
     line-height: 1.5;
 }
+
+.custom-img {
+	border: 1px solid black;
+}
