@@ -1,2 +1,0 @@
-Interpetrando os Resultados
-===========================

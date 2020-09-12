@@ -1,2 +1,0 @@
-Mensurando o Impacto
-====================

@@ -58,6 +58,7 @@ F.A.Q
    :hidden:
 
    pratica/introducao
-   pratica/regressao
-   pratica/interpretando
-   pratica/mensurando
+   pratica/1_exemplo
+   pratica/2_exemplo
+   pratica/3_exemplo
+   
