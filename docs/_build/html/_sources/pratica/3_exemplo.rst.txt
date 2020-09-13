@@ -28,16 +28,19 @@ Observe que deve ser utilizado dupla barra invertida em todos sistemas operacion
 O próximo passo é abrir a base de dados. Cada formato de arquivo(“xlsx”, “csv”, “xml”) possui uma forma distinta de abrir. Nesse guia o formato utilizado será “xlsx”, do aplicativo Excel da Microsoft.
 
 1. Caso não possua, instale um pacote que permita abrir arquivos “xlsx”:
+
 .. code-block:: r
 	
 	install.packages("openxlsx")
 
 2. Carregue o pacote:
+
 .. code-block:: r
 
 	library("openxlsx")
 
 3. Obtenha o nome do arquivo em que está contida sua base de dados. Se sua base de dados for o arquivo “Base_FAP.xlsx”, então passe o nome do arquivo após “xlsxFile” sem aspas e sem o formato “.xlsx”:
+
 .. code-block:: r
 
 	base = openxlsx::read.xlsx(xlsxFile = base_3)

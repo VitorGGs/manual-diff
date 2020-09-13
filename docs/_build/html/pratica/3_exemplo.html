@@ -294,21 +294,24 @@
 </div>
 <p>Observe que deve ser utilizado dupla barra invertida em todos sistemas operacionais Windows.</p>
 <p>O próximo passo é abrir a base de dados. Cada formato de arquivo(“xlsx”, “csv”, “xml”) possui uma forma distinta de abrir. Nesse guia o formato utilizado será “xlsx”, do aplicativo Excel da Microsoft.</p>
-<p>1. Caso não possua, instale um pacote que permita abrir arquivos “xlsx”:
-.. code-block:: r</p>
-<blockquote>
-<div><p>install.packages(“openxlsx”)</p>
-</div></blockquote>
-<p>2. Carregue o pacote:
-.. code-block:: r</p>
-<blockquote>
-<div><p>library(“openxlsx”)</p>
-</div></blockquote>
-<p>3. Obtenha o nome do arquivo em que está contida sua base de dados. Se sua base de dados for o arquivo “Base_FAP.xlsx”, então passe o nome do arquivo após “xlsxFile” sem aspas e sem o formato “.xlsx”:
-.. code-block:: r</p>
-<blockquote>
-<div><p>base = openxlsx::read.xlsx(xlsxFile = base_3)</p>
-</div></blockquote>
+<ol class="arabic simple">
+<li><p>Caso não possua, instale um pacote que permita abrir arquivos “xlsx”:</p></li>
+</ol>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;openxlsx&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Carregue o pacote:</p></li>
+</ol>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="s">&quot;openxlsx&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Obtenha o nome do arquivo em que está contida sua base de dados. Se sua base de dados for o arquivo “Base_FAP.xlsx”, então passe o nome do arquivo após “xlsxFile” sem aspas e sem o formato “.xlsx”:</p></li>
+</ol>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">base</span> <span class="o">=</span> <span class="n">openxlsx</span><span class="o">::</span><span class="nf">read.xlsx</span><span class="p">(</span><span class="n">xlsxFile</span> <span class="o">=</span> <span class="n">base_3</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>Observe que, no canto superior direito, o campo “Environment” possui uma nova variável: “base_3”. Essa variável contêm a sua base de dados e com ela que o R irá interagir.</p>
 </div>
 <div class="section" id="definindo-o-inicio-do-tratamento">
