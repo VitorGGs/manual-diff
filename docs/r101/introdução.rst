@@ -2,47 +2,66 @@
 Introdução
 """"""""""
 
-
-*Em construção*
-
-
 ===================
 Elementos Essencias
 ===================
-
-*Em construção*
 
 -----------------
 Como pedir ajuda?
 -----------------
 
+Na sua jornada como programador, você irá se deparar diversas vezes com assuntos desconhecidos, bugs e outra infinidade de momentos em que você sentirá a necessidade de ajuda.
 
-No Rstudio
+No próprio Rstudio, existem formas de você sanar várias de suas dúvidas. 
 
 .. code-block:: r
 
-	# Principais links do R
+	# digite este código no seu console e pressione Enter
 	help.start()
 
-	# Abre a ajuda de uma função específica
-	help(nome_da_funcao)
+Essa função abrirá, na aba *Help*, os principais links do R, com praticamente tudo que se tem de fundamental sobre a linguagem.
 
-	# Demonstra funcionalidades do R e seus pacotes
-	demo()
+Outra situação é quando você se deparar com funções que você não conhece. Por exemplo, vimos na seção anterior que a função *rnorm* cria uma lista de números normalmente distribuídos, mas se não soubessemos o que a função faz poderiamos digitar:
 
-Online:
+.. code-block:: r
 
-- Google 
-- Stackoverflow
-- Github
-- Log de erro
+	help(rnorm)
+
+E na seção *Help* será aberta a documentação dessa função, com sua descrição, forma de usar, argumentos que aceita, detalhes e etc. Isto é muito poderoso! Sempre que você se deperar com uma função que não sabe o funcionamento ou não se lembra exatamente quais argumentos ela aceita, você poderá invocar o help dessa função. De forma geral:
+
+.. code-block:: r
+
+	# para qualquer função
+	help(nome_da_função)
+
+O mais comum de se acontecer é que você mesmo após ler o help da função, você ainda necessite de mais informações e existem alguns sites que podem te auxiliar.
+
+O StackOverflow é um site de perguntas e respostas ao estilo "Yahoo Respostas", que basicamente "possui todas as dúvidas do mundo". Isto porque muito provavelmente algum programador já se deparou com a mesma dúvida que você e fez uma pergunta no site.
+
+Outro site muito conhecido é o Github. É nele que a maioria dos programadores do mundo todo armazenam seu código, então é possível entender mais como outras pessoas trabalham e ler toneladas de código.
+
+Por último, a todo momento você irá se deparar com erros no seus programas - os chamados bugs - e é importante que você não tenha medo deles e se disponha a entender o erro. Por exemplo, vamos rodar o seguinte código:
+
+.. code-block:: r
+
+	> 'a'/2
+	Error in "a"/2 : argumento não-numérico para operador binário
   
+Veja que dividir a letra 'a' por 2 resulta em um erro, que me diz que nao posso dividir algo não-númerico, uma letra por exemplo, por um operador binário, no caso um número.
+
+Esse exemplo pode parecer esdrúxulo, mas salienta que lendo o Erro é possível entender o que aconteceu de errado. Entrentanto, na maioria das vezes outras pessoas já tiveram o mesmo erro que você, então vale a pena pesquisar na internet essa mensagem de Erro.
 
 -------
 Pacotes
 -------
 
-**Instalar pacotes**
+O R é uma ferramenta incrível que possui diversas funcionalidades e uma imensidão de usuários. Essa característica permitiu a criação de um universo de pacotes que tem o objetivo de dar ainda mais poder para quem utiliza o R.
+
+Pacotes são códigos já escritos por terceiros, que você poderá utilizar nos seus *Scripts* sem precisar recriar tudo.
+
+O Tidyverse é um conjunto de pacotes para manipulação e extração de dados muitíssimo utilizado. É composto pelo 'ggplot2' para manipulação de dados, o 'tidyr' para limpeza, o 'dplyr' para manipulação e alguns outros pacotes. O Tidyverse é apenas um exemplo da importância que os pacotes tem hoje em dia na comunidade R, existem ainda milhares de pacotes que podem ser encontrados no CRAN em https://cran.r-project.org/.
+
+Para instalar ou remover pacotes, siga as instruções a seguir
 
 .. code-block:: r
 
@@ -51,10 +70,7 @@ Pacotes
 
 	# Instalando vários pacotes
 	install.packages(c("plyr", "tidyr", "dplyr"))
-
-**Remover Pacotes**
-
-.. code-block:: r
+	
 
 	# Removendo um pacote
 	remove.packages("tidyr")
