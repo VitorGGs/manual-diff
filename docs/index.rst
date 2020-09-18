@@ -24,7 +24,7 @@ Mais especificamente, as avaliações de impacto medem mudanças em um resultado
 
 Neste guia, a fim de facilitar o entendimento, iremos apresentar uma sugestão de avaliação da efetividade da iniciativa prevista no Edital nº 10/2019 da FAPDF, que refere-se à seleção pública de propostas de apoio à participação em eventos de natureza científica, tecnológica e de inovação para docentes da rede pública de ensino do Distrito Federal.
 
-Iremos sugerir a utilização de três indicadores: esforço docente, nota do Enem e média escolar. Por meio do modelo econométrico chamado *diferenças em diferenças*, vamos mensurar os impactos da política previsa no Edital em análise e interpretar os resultados. 
+Iremos sugerir a utilização de três indicadores: esforço docente, nota do Enem e média escolar. Por meio do modelo econométrico chamado *diferenças em diferenças* ou diff in diff, vamos mensurar os impactos da política previsa no Edital em análise e interpretar os resultados. 
 
 ================
 Exemplo de vídeo
