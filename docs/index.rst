@@ -52,6 +52,7 @@ F.A.Q
    econometria/introducao
    econometria/regressões
    econometria/did
+   econometria/Avaliação de Impacto de Políticas Públicas
 
 .. toctree::
    :caption: Prática
