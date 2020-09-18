@@ -6,9 +6,12 @@
 Bem Vindos!
 ===========
 
-Este é um guia de como mensurar os impactos das políticas da FAP-DF. Nele você irá aprender a linguagem de programçao "R", umas das principais ferramentas utilizadas pelos cientistas de dados. Também entenderá o que é uma regressão e como ela pode te auxiliar a mensurar impactos, utilizando principalmente o modelo de *diferenças em diferenças*. Por fim,
+Este é um guia de como mensurar os impactos das políticas da FAP-DF. Nele você irá aprender a utilizar o software "R", umas das principais ferramentas utilizadas pelos cientistas de dados. 
 
-*Em construção*
+Para facilitar o entendimento, iremos apresentar uma sugestão de avaliação da efetividade da iniciativa prevista no Edital nº 10/2019 da FAPDF, que refere-se à seleção pública de propostas de apoio à participação em eventos de natureza científica, tecnológica e de inovação para docentes da rede pública de ensino do Distrito Federal.
+
+Iremos sugerir a utilização de três indicadores: esforço docente, nota do Enem e média escolar. Por meio do modelo econométrico chamado *diferenças em diferenças*, vamos mensurar os impactos da política previsa no Edital em análise e interpretar os resultados. 
+
 
 
 ================
