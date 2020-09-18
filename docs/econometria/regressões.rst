@@ -1,5 +1,5 @@
 """"""""""
-Regressões
+Econometria 
 """"""""""
 Muitas pesquisas em economia são realizadas por meio da análise dos experimentos naturais. Esses experimentos naturais acontecem quando algum evento exógeno, como uma alteração de política governamental, modifica as circunstâncias na qual as pessoas, empresas ou entes públicos estão inseridos.
 
