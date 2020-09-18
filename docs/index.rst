@@ -22,11 +22,6 @@ Exemplo de vídeo
    </div>
    
 
-=====
-F.A.Q
-=====
-
-*Em construção*
 
 .. toctree::
    :caption: Primeiros passos
