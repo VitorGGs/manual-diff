@@ -2,16 +2,19 @@
 Indicador Média Escolar
 """""""""""""""""""""""
 
-A nota do Exame Nacional do Ensino Médio (Enem) do aluno é uma variável que pode ser medida diretamente de forma objetiva e constitui um bom parâmetro para avaliação do impacto de políticas na educação.
+Assim como a nota do Enem, o Indicador Média Escolar do aluno é uma variável que pode ser medida diretamente de forma objetiva e constitui um bom parâmetro para avaliação do impacto de políticas na educação. 
 
-Em nossa simulação, a nota varia de 0 a 1000. Com base nisso, construímos uma base de dados simulada (base_2) constituída por 800 alunos, sendo 80 do grupo de tratamento, entre os anos de 2018 e 2019. Na simulação, o ano 2018 foi considerado como anterior à política pública e o ano de 2019 como posterior. 
+Além disso, a média escolar pode ser mais facilmente observada pela Secretaria de Educação e por mais anos do que a nota do Enem. 
 
-A primeira coluna da base representa o aluno (para cada qual foi atribuído um número de 1 a 800) e a segunda coluna é a nota obtida no Enem. Já a coluna tratamento registra “sim” para o aluno que tenha sido alvo da política pública, ou seja, que tenha recebido o apoio à participação em eventos de natureza científica, tecnológica e de inovação. Por fim, a última coluna registra o ano correspondente ao dado.
+Em nossa simulação, a média escolar varia de 0 a 10. Com base nisso, construímos uma base de dados simulada (base_3), cujo link segue ao final do texto, constituída por 800 alunos, sendo 80 do grupo de tratamento, entre os anos de 2016 e 2019. Na simulação, os anos 2016 e 2017 foram considerados como anteriores à política pública e os anos 2018 e 2019 como posteriores. 
 
+A primeira coluna da base representa o aluno (para cada qual foi atribuído um número de 1 a 800) e a segunda coluna é a média escolar. Já a coluna tratamento registra “sim” para o aluno que tenha sido alvo da política pública, ou seja, que tenha recebido o apoio à participação em eventos de natureza científica, tecnológica e de inovação. Por fim, a última coluna registra o ano correspondente ao dado.
 Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:
 
 esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
 + β3 · pós_tratamento i + ε i
+
+Link base_3: https://drive.google.com/file/d/1XiUakRplDbPHgj4raiitSBimQmaZ7COd/view?usp=sharing
 
 ========================
 Calculando o modelo no R
