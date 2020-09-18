@@ -4,13 +4,11 @@ Diferenças em Diferenças
 
 Conforme apresentamos, a amostra deve ser dividida em quatro grupos: o grupo de controle anterior à mudança, o grupo de controle após a mudança, o grupo de tratamento anterior à mudança e o grupo de tratamento depois da mudança. Ademais o modelo diff-in-diff deve seguir o seguinte modelo:
 
-indicador = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
-+ β3 · pós_tratamento i + ε i
+indicador = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + β3 · pós_tratamento i + ε i
 
 Dito isso, considerando os indicadores, os modelos são:
 
-1.	esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
-+ β3 · pós_tratamento i + ε i
+1.	esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + β3 · pós_tratamento i + ε i
 
 2.	regularidade do docente da educação básica = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + + β3 · pós_tratamento i + ε i
 
