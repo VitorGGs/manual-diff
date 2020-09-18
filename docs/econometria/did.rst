@@ -2,7 +2,13 @@
 O Modelo Diferenças em Diferenças
 """"""""""""""""""""""""
 
-No modelo diferenças em diferenças, a amostra deve ser dividida em quatro grupos: o grupo de controle anterior à mudança, o grupo de controle após a mudança, o grupo de tratamento anterior à mudança e o grupo de tratamento depois da mudança.
+No modelo diferenças em diferenças, a amostra deve ser dividida em quatro grupos: o grupo de controle anterior à mudança, o grupo de controle após a mudança, o grupo de tratamento anterior à mudança e o grupo de tratamento depois da mudança. 
+
+Dentro do modelo, utiliza-se as variáveis indicadoras (ou dummys): dB, igual a um para os indivíduos do grupo de tratamento e zero para os indivíduos do grupo de controle; e d2, igual a um quando se referir aos dados do segundo período, após a mudança, e zero caso os dados se refiram ao período anterior à mudança. Assim, temos: 
+
+Y = g0 + g1*d2 + g2*dB + g3*d2*dB + outros fatores 
+
+na qual Y representa a variável em estudo, g1 o impacto no segundo período sobre a variável estudada, g2 o impacto no grupo de tratamento sobre a variável estudada, e g3 o impacto após o evento do grupo de tratamento frente ao grupo de controle sobre a variável estudada. Desse modo, g0 representa o valor esperado da variável em análise quando se estuda o grupo de controle antes da mudança, o que representa o parâmetro de comparação.
 
 No nosso exmeplo de análise do Edital nº 10/2019 da FAPDF, podemos sugerir um modelo no seguinte formato:
 
