@@ -2,9 +2,9 @@
 O Modelo Diferenças em Diferenças
 """"""""""""""""""""""""
 
-Conforme apresentamos, a amostra deve ser dividida em quatro grupos: o grupo de controle anterior à mudança, o grupo de controle após a mudança, o grupo de tratamento anterior à mudança e o grupo de tratamento depois da mudança.
+No modelo diferenças em diferenças, a amostra deve ser dividida em quatro grupos: o grupo de controle anterior à mudança, o grupo de controle após a mudança, o grupo de tratamento anterior à mudança e o grupo de tratamento depois da mudança.
 
-No nosso exmeplo de análise do Edital nº 10/2019 da FAPDF, podemos sugerir um modelo Diferenças em Diferenças no seguinte formato:
+No nosso exmeplo de análise do Edital nº 10/2019 da FAPDF, podemos sugerir um modelo no seguinte formato:
 
 indicador = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + β3 · pós_tratamento i + ε i
 
