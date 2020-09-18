@@ -29,8 +29,4 @@ As perguntas iniciais em uma avaliação de impacto, que serão respondidas nas 
 
 8.	Que metodologia usar para calcular o impacto?
 
-a.	É possível aplicar um RCT (ensaio randomizado)? Qual o desenho mais adequado?
-
-b.	Só é possível avaliar por quase-experimentos? Qual é a estrutura do seus dados?
-
 9.	O programa apresentou impacto na média? E para subgrupos? Estes resultados são robustos?
