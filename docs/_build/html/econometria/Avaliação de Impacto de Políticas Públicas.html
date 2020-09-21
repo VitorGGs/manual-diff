@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>A Econometria e os Experimentos Naturais &mdash; documentação Home </title>
+  <title>Avaliação de Impacto de Políticas Públicas &mdash; documentação Home </title>
   
 
   
@@ -38,8 +38,8 @@
     
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Buscar" href="../search.html" />
-    <link rel="next" title="O Modelo Diferenças em Diferenças" href="did.html" />
-    <link rel="prev" title="Avaliação de Impacto de Políticas Públicas" href="Avaliação de Impacto de Políticas Públicas.html" /> 
+    <link rel="next" title="A Econometria e os Experimentos Naturais" href="regressões.html" />
+    <link rel="prev" title="Gráficos" href="../r101/gráficos.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -164,9 +164,8 @@
 </ul>
 <p class="caption"><span class="caption-text">Econometria</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introducao.html">Introdução</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Avaliação de Impacto de Políticas Públicas.html">Avaliação de Impacto de Políticas Públicas</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">A Econometria e os Experimentos Naturais</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Avaliação de Impacto de Políticas Públicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="regressões.html">A Econometria e os Experimentos Naturais</a></li>
 <li class="toctree-l1"><a class="reference internal" href="did.html">O Modelo Diferenças em Diferenças</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Prática</span></p>
@@ -265,13 +264,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>A Econometria e os Experimentos Naturais</li>
+      <li>Avaliação de Impacto de Políticas Públicas</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/econometria/regressões.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+            <a href="../_sources/econometria/Avaliação de Impacto de Políticas Públicas.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
           
         
       </li>
@@ -284,13 +283,80 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="a-econometria-e-os-experimentos-naturais">
-<h1>A Econometria e os Experimentos Naturais<a class="headerlink" href="#a-econometria-e-os-experimentos-naturais" title="Link permanente para este título">¶</a></h1>
-<p>A Econometria é um ramo da economia que faz uso de ferramentas estatísticas com o intuito de entender a relação entre variáveis econômicas através da aplicação de um modelo matemático.</p>
-<p>Nesse sentido, muitas pesquisas são realizadas por meio da análise dos experimentos naturais. Esses experimentos naturais acontecem quando alguma ocorrência externa, como a implementação de uma política governamental, modifica as circunstâncias do públicos em análise.</p>
-<p>A fim de entendermos um experimento natural, temos que ter um grupo de controle, ou seja, um grupo que não foi afetado pela mudança, e um grupo de tratamento que foi afetado, ambos com características semelhantes. Enquanto em um experimento real os grupos de tratamento e controle são escolhidos aleatoriamente para não haver viés nas estimativas, os grupos em um experimento natural surgem a partir da mudança que é efetuada.</p>
-<p>Com o objetivo de examinarmos as diferenças entre os dois grupos, precisa-se de dados de antes e depois do evento para os dois grupos. Destarte, a amostra é dividida em quatro grupos: o grupo de controle anterior à mudança, o grupo de controle após a mudança, o grupo de tratamento anterior à mudança e o grupo de tratamento depois da mudança.</p>
-<p>Sob a perspectiva econométrica, podemos representar essas ideias por meio de uma regressão adotando o modelo diferenças em diferenças, conforme mostraremos na próxima seção.</p>
+  <div class="section" id="avaliacao-de-impacto-de-politicas-publicas">
+<h1>Avaliação de Impacto de Políticas Públicas<a class="headerlink" href="#avaliacao-de-impacto-de-politicas-publicas" title="Link permanente para este título">¶</a></h1>
+<p>As perguntas iniciais em uma avaliação de impacto são:</p>
+<ol class="arabic simple">
+<li><p>No que consiste o programa?</p></li>
+<li><p>O programa já está definido?</p></li>
+<li><p>Qual é o objetivo do programa?</p></li>
+<li><p>Qual o público alvo do programa?</p></li>
+<li><p>Que indicadores usaremos para apurar o cumprimento do objetivo?</p></li>
+<li><p>Há dados (primários ou secundários) pré-programa e pós-programa sobre tais indicadores?</p></li>
+<li><p>Que metodologia usar para calcular o impacto?</p></li>
+<li><p>O programa apresentou impacto na média? E para subgrupos? Estes resultados são robustos?</p></li>
+</ol>
+<p>A fim de deixar tudo isso mais claro, vamos exemplificar com perguntas e repostas acerca de avaliação de programa para o Edital nº 10/2019 da FAPDF:</p>
+<ol class="arabic simple">
+<li><p>No que consiste o programa?</p></li>
+</ol>
+<p>O programa consiste na seleção pública de propostas de apoio à participação em eventos de natureza científica, tecnológica e de inovação para docentes da rede pública de ensino do Distrito Federal. Serão selecionadas até 80 (oitenta) propostas para eventos nacionais e internacionais, sendo que 60 (sessenta) propostas serão destinadas a eventos nacionais e 20 (vinte) propostas para eventos internacionais.</p>
+<ol class="arabic simple" start="2">
+<li><p>O programa já está definido?</p></li>
+</ol>
+<p>O programa está definido no Edital nº 10/2019 da Fundação de Apoio à Pesquisa do Distrito Federal – FAPDF.</p>
+<ol class="arabic simple" start="3">
+<li><p>Qual é o objetivo do programa?</p></li>
+</ol>
+<p>Os objetivos do programa são de:</p>
+<blockquote>
+<div><p>3.1 incentivar e apoiar a divulgação de conhecimento científico, tecnológico e de inovação, bem como a interação de docentes e sua equipe de estudantes com instituições, organizações ou unidades escolares no país e no exterior;</p>
+<p>3.2 fortalecer a pesquisa no âmbito da Rede Pública de Educação Básica do Distrito Federal; e</p>
+<p>3.3 estimular a participação do estudante em eventos científicos, tecnológicos e de inovação, de forma a contribuir aos primeiros passos da iniciação científica e criar oportunidades que contribuam para a formação da vocação e da cultura científica.</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Qual o público alvo do programa?</p></li>
+</ol>
+<p>O público alvo são os docentes e estudantes da Rede Pública de Educação Básica do Distrito Federal.</p>
+<ol class="arabic simple" start="5">
+<li><p>Que indicadores usaremos para apurar o cumprimento do objetivo?</p></li>
+</ol>
+<p>É importante que cada objetivo seja mensurável por pelo menos um indicador. Nesse sentido, a proposta é constituída pelos seguintes indicadores, elencadas conforme as alíneas do item 3:</p>
+<blockquote>
+<div><p>5.1 incentivar e apoiar a divulgação de conhecimento científico, tecnológico e de inovação, bem como a interação de docentes e sua equipe de estudantes com instituições, organizações ou unidades escolares no país e no exterior;</p>
+<p>Esse objetivo pode ser dividido em duas partes. A primeira é de incentivo e apoio ao conhecimento. Neste sentido, temos as escolas que foram selecionados os professores e estudantes que participaram do edital e escolas que não receberam este tipo incentivo. Ou seja, temos um grupo de controle e um grupo de tratamento, que chamamos de grupo que recebeu a política pública. Vale destacar que estaremos aqui sugerindo alguns indicadores que poderão responder se a política teve impacto ou não. Contudo, no decorrer da execução do edital podem ser observados outros indicadores que poderão compor a regressão econométrica proposta como modelo de avaliação.</p>
+<p>5.2   fortalecer a pesquisa no âmbito da Rede Pública de Educação Básica do Distrito Federal;</p>
+<p>O mais importante para que possamos ter uma metodologia de avaliação que tenha acreditação no meio acadêmico e mesmo dos órgão de controle são boas escolhas e testes robustos para com as variáveis escolhidas, bem como a disponibilidade de dados ou mesmo um armazenamento confiável dos dados.</p>
+<p>Considerando a primeira parte do objetivo 5.1 e o 5.2, podemos sugerir os seguintes indicadores:</p>
+<blockquote>
+<div><p>Titulação do docente</p>
+<p>Regularidade do docente da Educação Básica</p>
+<p>Adequação da formação do docente</p>
+</div></blockquote>
+<p>Por fim, é importante atuação junto às escolas e professores e a Secretaria de Educação  para poder construir indicadores que possam ser usados nas avaliações futuras.</p>
+<p>5.3   estimular a participação do estudante em eventos científicos, tecnológicos e de inovação, de forma a contribuir aos primeiros passos da iniciação científica e criar oportunidades que contribuam para a formação da vocação e da cultura científica.</p>
+<p>Esse objetivo pode ser dividido em duas partes. A primeira parte diz respeito ao estímulo à participação do estudante em eventos, enquanto a segunda parte relaciona-se à iniciação científica.</p>
+<p>E primeira parte é difícil de ser avaliada, pois não encontramos indicadores para o grupo não tratado. Já a segunda parte pode ser avaliada por meio dos seguintes indicadores:</p>
+<blockquote>
+<div><p>Taxa de abandono escolar</p>
+<p>Taxa de aprovação</p>
+<p>Nota do ENEM do aluno participante</p>
+<p>Média Escolar</p>
+</div></blockquote>
+</div></blockquote>
+<p>Observação: todos os indicadores acima podem ser estabelecidos conforme metodologia do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - Inep.</p>
+<ol class="arabic simple" start="6">
+<li><p>Há dados sobre tais indicadores?</p></li>
+</ol>
+<p>Há base de dados para não tratados para os indicadores disponíveis no Inep. No entanto, para dados do grupo de tratamento, as informações deverão ser exigidas nos próximos editais similares ao Edital nº 10/2019 e a base de dados será constituída no decorrer do tempo, devendo, também, ter informações pretéritas dos candidatos. Para fins deste trabalho, serão utilizados dados simulados para o grupo tratado.</p>
+<ol class="arabic simple" start="7">
+<li><p>Que metodologia usar para calcular o impacto?</p></li>
+</ol>
+<p>Uma metodologia interessante para este caso é a de diferenças em diferenças, sobre a qual trataremos em tópico específico.</p>
+<ol class="arabic simple" start="8">
+<li><p>O programa apresentou impacto na média? E para subgrupos? Estes resultados são robustos?</p></li>
+</ol>
+<p>Os resultados da metodologia diferenças em diferenças podem responder estas perguntas.</p>
 </div>
 
 
@@ -301,10 +367,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="did.html" class="btn btn-neutral float-right" title="O Modelo Diferenças em Diferenças" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="regressões.html" class="btn btn-neutral float-right" title="A Econometria e os Experimentos Naturais" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Avaliação de Impacto de Políticas Públicas.html" class="btn btn-neutral float-left" title="Avaliação de Impacto de Políticas Públicas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+        <a href="../r101/gráficos.html" class="btn btn-neutral float-left" title="Gráficos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
       
     </div>
   

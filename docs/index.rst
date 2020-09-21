@@ -59,6 +59,7 @@ Exemplo de vídeo
    :caption: Econometria
    :hidden:
 
+   econometria/introducao
    econometria/Avaliação de Impacto de Políticas Públicas
    econometria/regressões
    econometria/did
@@ -72,3 +73,8 @@ Exemplo de vídeo
    pratica/2_exemplo
    pratica/3_exemplo
    
+.. toctree::
+   :caption: Referencial Teórico
+   :hidden:
+
+   ref_teorico

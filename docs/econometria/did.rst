@@ -1,6 +1,6 @@
-""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""
 O Modelo Diferenças em Diferenças
-""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""
 
 No modelo diferenças em diferenças, a amostra deve ser dividida em quatro grupos: o grupo de controle anterior à mudança, o grupo de controle após a mudança, o grupo de tratamento anterior à mudança e o grupo de tratamento depois da mudança. 
 

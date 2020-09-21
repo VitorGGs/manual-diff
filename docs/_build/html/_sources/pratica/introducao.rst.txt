@@ -6,8 +6,7 @@ A fim de facilitar a reprodução de um modelo econométrico para avaliação de
 
 Conforme apresentado na parte teórica, a amostra deve ser dividida em quatro grupos: o grupo de controle anterior à mudança, o grupo de controle após a mudança, o grupo de tratamento anterior à mudança e o grupo de tratamento depois da mudança. Ademais o modelo diff-in-diff deve seguir o seguinte modelo:
 
-indicador = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
-+ β3 · pós_tratamento i + ε i
+indicador = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + β3 · pós_tratamento i + ε i
   
 De acordo com o edital em análise, a iniciativa refere-se à seleção pública de propostas de apoio à participação em eventos de natureza científica, tecnológica e de inovação para docentes da rede pública de ensino do Distrito Federal. Está prevista a seleção de até 80 propostas (60 nacionais e 20 internacionais) habilitadas e/ou ao limite da disponibilidade orçamentária e financeira da FAPDF, no primeiro ano de vigência.
 

@@ -1,6 +1,7 @@
-""""""""""
-A Econometria e os Experimentos Naturais 
-""""""""""
+""""""""""""""""""""""""""""""""""""""""
+A Econometria e os Experimentos Naturais
+""""""""""""""""""""""""""""""""""""""""
+
 A Econometria é um ramo da economia que faz uso de ferramentas estatísticas com o intuito de entender a relação entre variáveis econômicas através da aplicação de um modelo matemático.
 
 Nesse sentido, muitas pesquisas são realizadas por meio da análise dos experimentos naturais. Esses experimentos naturais acontecem quando alguma ocorrência externa, como a implementação de uma política governamental, modifica as circunstâncias do públicos em análise.

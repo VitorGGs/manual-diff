@@ -10,7 +10,7 @@ O esforço realizado pelos professores no exercício da profissão é um aspecto
 
 Conforme o citado instituto, o indicador classifica o docente em níveis de 1 a 6 de acordo com o esforço empreendido no exercício da profissão, níveis elevados indicam maior esforço. A partir dos dados disponíveis no Censo da Educação Básica, considerou-se que o esforço docente está relacionado às seguintes características da docência: número de escolas em que atua, número de turnos de trabalho, número de alunos atendidos e número de etapas nas quais leciona. 
 
-Com base nisso, construímos uma base de dados simulada (base_1) constituída por 800 docentes, sendo 80 do grupo de tratamento, entre os anos de 2016 e 2019. Na simulação, os anos 2016 e 2017 foram considerados como anteriores à política pública e os anos 2018 e 2019 como posteriores. 
+Com base nisso, construímos uma base de dados simulada (base_1), cujo link segue ao final do texto, constituída por 800 docentes, sendo 80 do grupo de tratamento, entre os anos de 2016 e 2019. Na simulação, os anos 2016 e 2017 foram considerados como anteriores à política pública e os anos 2018 e 2019 como posteriores. 
 
 A primeira coluna da base representa o professor (para cada qual foi atribuído um número de 1 a 800) e a segunda coluna é o nível de esforço apurado conforme o indicador do INEP. Já a coluna tratamento registra “sim” para o professor que tenha sido alvo da política pública, ou seja, que tenha recebido o apoio à participação em eventos de natureza científica, tecnológica e de inovação. Por fim, a última coluna registra o ano correspondente ao dado.
 
@@ -18,12 +18,14 @@ Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:
 
 esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
 + β3 · pós_tratamento i + ε i
+
+Link base_1: https://drive.google.com/file/d/1piYyjuJbAj9cuayDk2H34MjEOpJFovuy/view?usp=sharing
   
 ========================
 Calculando o modelo no R
 ========================
 
-nicialmente, precisamos informar ao R a localização da sua base de dados. A função “setwd” significa set working directory ou definir diretório de trabalho.O argumento dessa função deverá ser o local da pasta. Por exemplo, caso sua base de dados esteja localizada na pasta “C:/Users/Base/base_1”:
+Inicialmente, precisamos informar ao R a localização da sua base de dados. A função “setwd” significa set working directory ou definir diretório de trabalho.O argumento dessa função deverá ser o local da pasta. Por exemplo, caso sua base de dados esteja localizada na pasta “C:/Users/Base/base_1”:
 
 .. code-block:: r
 

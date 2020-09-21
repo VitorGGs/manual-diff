@@ -164,9 +164,9 @@
 </ul>
 <p class="caption"><span class="caption-text">Econometria</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../econometria/introducao.html">Introdução</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../econometria/regressões.html">Regressões</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../econometria/did.html">Diferenças em Diferenças</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../econometria/Avaliação de Impacto de Políticas Públicas.html">Avaliação de Impacto de Políticas Públicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../econometria/regressões.html">A Econometria e os Experimentos Naturais</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../econometria/did.html">O Modelo Diferenças em Diferenças</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Prática</span></p>
 <ul class="current">
@@ -214,6 +214,10 @@
 </li>
 </ul>
 </li>
+</ul>
+<p class="caption"><span class="caption-text">Referencial Teórico</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ref_teorico.html">Referencial Teórico</a></li>
 </ul>
 
             
@@ -282,11 +286,12 @@
   <div class="section" id="indicador-nota-do-enem">
 <h1>Indicador Nota do Enem<a class="headerlink" href="#indicador-nota-do-enem" title="Link permanente para este título">¶</a></h1>
 <p>A nota do Exame Nacional do Ensino Médio (Enem) do aluno é uma variável que pode ser medida diretamente de forma objetiva e constitui um bom parâmetro para avaliação do impacto de políticas na educação.</p>
-<p>Em nossa simulação, a nota varia de 0 a 1000. Com base nisso, construímos uma base de dados simulada (base_2) constituída por 800 alunos, sendo 80 do grupo de tratamento, entre os anos de 2018 e 2019. Na simulação, o ano 2018 foi considerado como anterior à política pública e o ano de 2019 como posterior.</p>
+<p>Em nossa simulação, a nota varia de 0 a 1000. Com base nisso, construímos uma base de dados simulada (base_2), cujo link segue ao final do texto, constituída por 800 alunos, sendo 80 do grupo de tratamento, entre os anos de 2018 e 2019. Na simulação, o ano 2018 foi considerado como anterior à política pública e o ano de 2019 como posterior.</p>
 <p>A primeira coluna da base representa o aluno (para cada qual foi atribuído um número de 1 a 800) e a segunda coluna é a nota obtida no Enem. Já a coluna tratamento registra “sim” para o aluno que tenha sido alvo da política pública, ou seja, que tenha recebido o apoio à participação em eventos de natureza científica, tecnológica e de inovação. Por fim, a última coluna registra o ano correspondente ao dado.
 Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:</p>
 <p>esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
 + β3 · pós_tratamento i + ε i</p>
+<p>Link base_2: <a class="reference external" href="https://drive.google.com/file/d/1mmDW8eV21lOfeezXghK-sRkLw3xYK6Iv/view?usp=sharing">https://drive.google.com/file/d/1mmDW8eV21lOfeezXghK-sRkLw3xYK6Iv/view?usp=sharing</a></p>
 <div class="section" id="calculando-o-modelo-no-r">
 <h2>Calculando o modelo no R<a class="headerlink" href="#calculando-o-modelo-no-r" title="Link permanente para este título">¶</a></h2>
 <p>Inicialmente, precisamos informar ao R a localização da sua base de dados. A função “setwd” significa set working directory ou definir diretório de trabalho.O argumento dessa função deverá ser o local da pasta. Por exemplo, caso sua base de dados esteja localizada na pasta “C:/Users/Base/base_2”:</p>

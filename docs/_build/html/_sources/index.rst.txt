@@ -6,10 +6,25 @@
 Bem Vindos!
 ===========
 
-Este é um guia de como mensurar os impactos das políticas da FAP-DF. Nele você irá aprender a linguagem de programçao "R", umas das principais ferramentas utilizadas pelos cientistas de dados. Também entenderá o que é uma regressão e como ela pode te auxiliar a mensurar impactos, utilizando principalmente o modelo de *diferenças em diferenças*. Por fim,
+Este é um guia de como mensurar os impactos das políticas da FAP-DF. Nele você irá aprender a utilizar o software "R", umas das principais ferramentas utilizadas pelos cientistas de dados. 
 
-*Em construção*
+É importante lembrar que a implementação de programas públicos demanda recursos cada vez mais escassos tornando a necessidade de avaliações de eficiência e efetividade de sua aplicação. Os recursos públicos apresentam um “custo de oportunidade”. Em economia, o custo de oportunidade é um conceito teórico que mede o custo daquilo que se poderia fazer em vez daquilo que se está fazendo. Nesse sentido, a avaliação de programas públicos permite mensurar o impacto dessa política, auxiliando a comparação com o custo de oportunidade a fim de:
 
+   1. escolher o melhor programa dentre várias possibilidades;
+
+   2. descontinuar programas que não têm um impacto/benefício significativo;
+
+   3. evitar acabar com programas que têm impacto/benefício expressivos;
+
+   4. melhorar o desenho do programa, sua custo-efetividade e eficácia; e
+
+   5. decidir sobre a replicação ou ampliação do programa.
+
+Mais especificamente, as avaliações de impacto medem mudanças em um resultado de interesse atribuídas a uma intervenção (tratamento/programa) específica. O foco se dá nos resultados (como desempenho escolar e emprego) e, somente em alguns casos, nos produtos (como atendimentos, matrículas e formandos). Para tanto, é necessário dados de um grupo exposto ao programa (tratados) e de um grupo não exposto (controle), além de um corte temporal de antes e depois da implantação do programa.
+
+Neste guia, a fim de facilitar o entendimento, iremos apresentar uma sugestão de avaliação da efetividade da iniciativa prevista no Edital nº 10/2019 da FAPDF, que refere-se à seleção pública de propostas de apoio à participação em eventos de natureza científica, tecnológica e de inovação para docentes da rede pública de ensino do Distrito Federal.
+
+Iremos sugerir a utilização de três indicadores: esforço docente, nota do Enem e média escolar. Por meio do modelo econométrico chamado *diferenças em diferenças* ou diff in diff, vamos mensurar os impactos da política previsa no Edital em análise e interpretar os resultados. 
 
 ================
 Exemplo de vídeo
@@ -22,11 +37,6 @@ Exemplo de vídeo
    </div>
    
 
-=====
-F.A.Q
-=====
-
-*Em construção*
 
 .. toctree::
    :caption: Primeiros passos
@@ -50,6 +60,7 @@ F.A.Q
    :hidden:
 
    econometria/introducao
+   econometria/Avaliação de Impacto de Políticas Públicas
    econometria/regressões
    econometria/did
 
@@ -62,3 +73,8 @@ F.A.Q
    pratica/2_exemplo
    pratica/3_exemplo
    
+.. toctree::
+   :caption: Referencial Teórico
+   :hidden:
+
+   ref_teorico
