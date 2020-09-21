@@ -22,7 +22,7 @@ Este é um guia de como mensurar os impactos das políticas da FAP-DF. Nele voc�
 
 Mais especificamente, as avaliações de impacto medem mudanças em um resultado de interesse atribuídas a uma intervenção (tratamento/programa) específica. O foco se dá nos resultados (como desempenho escolar e emprego) e, somente em alguns casos, nos produtos (como atendimentos, matrículas e formandos). Para tanto, é necessário dados de um grupo exposto ao programa (tratados) e de um grupo não exposto (controle), além de um corte temporal de antes e depois da implantação do programa.
 
-Neste guia, a fim de facilitar o entendimento, iremos apresentar uma sugestão de avaliação da efetividade da iniciativa prevista no Edital nº 10/2019 da FAPDF, que refere-se à seleção pública de propostas de apoio à participação em eventos de natureza científica, tecnológica e de inovação para docentes da rede pública de ensino do Distrito Federal.
+Neste guia, a fim de facilitar o entendimento, iremos apresentar uma sugestão de avaliação da efetividade da iniciativa prevista no Edital nº 10/2019 da FAPDF, http://www.fap.df.gov.br/wp-content/uploads/2019/05/Edital-n%C2%BA-10-2019.pdf, que se refere à seleção pública de propostas de apoio à participação em eventos de natureza científica, tecnológica e de inovação para docentes da rede pública de ensino do Distrito Federal.
 
 Iremos sugerir a utilização de três indicadores: esforço docente, nota do Enem e média escolar. Por meio do modelo econométrico chamado *diferenças em diferenças* ou diff in diff, vamos mensurar os impactos da política previsa no Edital em análise e interpretar os resultados. 
 
