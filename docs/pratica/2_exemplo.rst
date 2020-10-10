@@ -112,7 +112,9 @@ Nível de significância
 
 O nível de significância irá dizer a probabilidade de que nossos resultados encontrados coincidam com a realidade. Uma forma de mensurar essa probabilidade é através do p-valor, última coluna da regressão Pr(>|t|). Quanto menor o p-valor, maior será a probabilidade de os resultados condizerem com a realidade. No geral, pode se dividir da seguinte forma:
 
+--------------------------------------------
 P-valor / Interpretação / Indicação do R
+--------------------------------------------
 
 Maior que 0,05 / Não significante                  
 
