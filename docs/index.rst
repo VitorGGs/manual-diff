@@ -73,6 +73,8 @@ Iremos sugerir a utilização de três indicadores: esforço docente, nota do En
    :caption: Pesquisadores
    :hidden:
 
+   pesquisadores
+
 .. toctree::
    :caption: Referencial Teórico
    :hidden:
