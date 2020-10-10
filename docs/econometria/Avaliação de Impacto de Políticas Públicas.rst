@@ -63,6 +63,8 @@ O público alvo são os docentes e estudantes da Rede Pública de Educação Bá
     Regularidade do docente da Educação Básica
     
     Adequação da formação do docente
+    
+    Esforço docente
 
   Por fim, é importante atuação junto às escolas e professores e a Secretaria de Educação  para poder construir indicadores que possam ser usados nas avaliações futuras.
 
