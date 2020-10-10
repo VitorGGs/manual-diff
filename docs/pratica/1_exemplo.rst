@@ -16,8 +16,7 @@ A primeira coluna da base representa o professor (para cada qual foi atribuído 
 
 Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:
 
-esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
-+ β3 · pós_tratamento i + ε i
+esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + β3 · pós_tratamento i + ε i
 
 Link base_1: https://drive.google.com/file/d/1piYyjuJbAj9cuayDk2H34MjEOpJFovuy/view?usp=sharing
   
