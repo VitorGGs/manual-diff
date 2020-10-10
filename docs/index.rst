@@ -37,10 +37,13 @@ Iremos sugerir a utilização de três indicadores: esforço docente, nota do En
 Pesquisadores
 ==============
 
-Eric Lisboa Coda Dias
-Marcelo Estrela Fiche
-Roberto de Góes Ellery Júnior
-Vitor Gabriel
+ Eric Lisboa Coda Dias
+ 
+ Marcelo Estrela Fiche
+ 
+ Roberto de Góes Ellery Júnior
+ 
+ Vitor Gabriel
 
 .. toctree::
    :caption: Primeiros passos
