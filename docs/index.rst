@@ -33,7 +33,14 @@ Iremos sugerir a utilização de três indicadores: esforço docente, nota do En
     <iframe width="560" height="315" src="https://youtu.be/Zz26qccH3qo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div>
    
+==============
+Pesquisadores
+==============
 
+Eric Lisboa Coda Dias
+Marcelo Estrela Fiche
+Roberto de Góes Ellery Júnior
+Vitor Gabriel
 
 .. toctree::
    :caption: Primeiros passos
