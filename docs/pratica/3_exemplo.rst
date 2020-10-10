@@ -114,7 +114,17 @@ Nível de significância
 
 O nível de significância irá dizer a probabilidade de que nossos resultados encontrados coincidam com a realidade. Uma forma de mensurar essa probabilidade é através do p-valor, última coluna da regressão Pr(>|t|). Quanto menor o p-valor, maior será a probabilidade de os resultados condizerem com a realidade. No geral, pode se dividir da seguinte forma:
 
-*em construção*
+--------------------------------------------
+P-valor / Interpretação / Indicação do R
+--------------------------------------------
+
+Maior que 0,05 / Não significante                  
+
+0,01 a 0,05 / Significante / *
+
+0,001 a 0,01 / Muito significante / **
+
+Menor que 0,001 / Extremamente significante / ***
 
 Portanto, avaliando o p-valor da variável did, podemos classificá-la como significante. O próprio software R nos auxilia com essa classificação, bastando observar o número de asteriscos, “*” nesse nosso exemplo. Então, nesse caso, é possível evidenciar que houve impactos do apoio previsto no Edital nº 10/2019 na média escolar.
 
