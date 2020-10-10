@@ -26,9 +26,6 @@ Neste guia, a fim de facilitar o entendimento, iremos apresentar uma sugestão d
 
 Iremos sugerir a utilização de três indicadores: esforço docente, nota do Enem e média escolar. Por meio do modelo econométrico chamado *diferenças em diferenças* ou diff in diff, vamos mensurar os impactos da política previsa no Edital em análise e interpretar os resultados. 
 
-================
-Exemplo de vídeo
-================
 
 .. raw:: html
 
