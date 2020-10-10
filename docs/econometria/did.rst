@@ -24,3 +24,9 @@ Dito isso, considerando os indicadores, os modelos são:
 
 
 Este exemplo demonstra o modelo e a forma que poderá ser feita a avaliação. A seguir, iremos apresentar um manual com algoritmos e o passo a passo para rodar o modelo diferenças em diferenças no R para que pessoas com um mínimo de capacitação em econometria aplicada possam realizar avaliações futuras deste e outros editais para os quais esta metodologia se aplica.
+
+.. raw:: html
+
+   <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=i2BU5cakvtI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
