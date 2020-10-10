@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Bem Vindos!
+Bem-vindos!
 ===========
 
 Este é um guia de como mensurar os impactos das políticas da FAP-DF. Nele você irá aprender a utilizar o software "R", umas das principais ferramentas utilizadas pelos cientistas de dados. 
