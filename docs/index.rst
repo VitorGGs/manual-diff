@@ -81,6 +81,10 @@ Pesquisadores
    pratica/3_exemplo
    
 .. toctree::
+   :caption: Pesquisadores
+   :hidden:
+
+.. toctree::
    :caption: Referencial Teórico
    :hidden:
 
