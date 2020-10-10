@@ -11,8 +11,7 @@ Em nossa simulação, a média escolar varia de 0 a 10. Com base nisso, constru�
 A primeira coluna da base representa o aluno (para cada qual foi atribuído um número de 1 a 800) e a segunda coluna é a média escolar. Já a coluna tratamento registra “sim” para o aluno que tenha sido alvo da política pública, ou seja, que tenha recebido o apoio à participação em eventos de natureza científica, tecnológica e de inovação. Por fim, a última coluna registra o ano correspondente ao dado.
 Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:
 
-esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
-+ β3 · pós_tratamento i + ε i
+esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + β3 · pós_tratamento i + ε i
 
 Link base_3: https://drive.google.com/file/d/1XiUakRplDbPHgj4raiitSBimQmaZ7COd/view?usp=sharing
 
