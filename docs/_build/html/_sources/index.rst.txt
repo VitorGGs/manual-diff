@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Bem Vindos!
+Bem-vindos!
 ===========
 
 Este é um guia de como mensurar os impactos das políticas da FAP-DF. Nele você irá aprender a utilizar o software "R", umas das principais ferramentas utilizadas pelos cientistas de dados. 
@@ -22,21 +22,17 @@ Este é um guia de como mensurar os impactos das políticas da FAP-DF. Nele voc�
 
 Mais especificamente, as avaliações de impacto medem mudanças em um resultado de interesse atribuídas a uma intervenção (tratamento/programa) específica. O foco se dá nos resultados (como desempenho escolar e emprego) e, somente em alguns casos, nos produtos (como atendimentos, matrículas e formandos). Para tanto, é necessário dados de um grupo exposto ao programa (tratados) e de um grupo não exposto (controle), além de um corte temporal de antes e depois da implantação do programa.
 
-Neste guia, a fim de facilitar o entendimento, iremos apresentar uma sugestão de avaliação da efetividade da iniciativa prevista no Edital nº 10/2019 da FAPDF, que refere-se à seleção pública de propostas de apoio à participação em eventos de natureza científica, tecnológica e de inovação para docentes da rede pública de ensino do Distrito Federal.
+Neste guia, a fim de facilitar o entendimento, iremos apresentar uma sugestão de avaliação da efetividade da iniciativa prevista no Edital nº 10/2019 da FAPDF (http://www.fap.df.gov.br/wp-content/uploads/2019/05/Edital-n%C2%BA-10-2019.pdf) que se refere à seleção pública de propostas de apoio à participação em eventos de natureza científica, tecnológica e de inovação para docentes da rede pública de ensino do Distrito Federal.
 
 Iremos sugerir a utilização de três indicadores: esforço docente, nota do Enem e média escolar. Por meio do modelo econométrico chamado *diferenças em diferenças* ou diff in diff, vamos mensurar os impactos da política previsa no Edital em análise e interpretar os resultados. 
 
-================
-Exemplo de vídeo
-================
 
 .. raw:: html
 
    <div style="text-align: center; margin-bottom: 2em;">
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/F5mRW0jo-U4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zz26qccH3qo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div>
    
-
 
 .. toctree::
    :caption: Primeiros passos
@@ -59,7 +55,6 @@ Exemplo de vídeo
    :caption: Econometria
    :hidden:
 
-   econometria/introducao
    econometria/Avaliação de Impacto de Políticas Públicas
    econometria/regressões
    econometria/did
@@ -73,6 +68,12 @@ Exemplo de vídeo
    pratica/2_exemplo
    pratica/3_exemplo
    
+.. toctree::
+   :caption: Pesquisadores
+   :hidden:
+
+   pesquisadores
+
 .. toctree::
    :caption: Referencial Teórico
    :hidden:

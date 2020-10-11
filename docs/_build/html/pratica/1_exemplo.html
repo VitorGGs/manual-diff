@@ -180,6 +180,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#realizando-a-regressao">Realizando a Regressão</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interpretando-os-resultados">Interpretando os resultados</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#nivel-de-significancia">Nível de significância</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#p-valor-interpretacao-indicacao-do-r">P-valor / Interpretação / Indicação do R</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sinal-da-variavel">Sinal da variável</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mensurando-o-impacto">Mensurando o impacto</a></li>
 </ul>
@@ -194,6 +195,7 @@
 <li class="toctree-l2"><a class="reference internal" href="2_exemplo.html#realizando-a-regressao">Realizando a Regressão</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2_exemplo.html#interpretando-os-resultados">Interpretando os resultados</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="2_exemplo.html#nivel-de-significancia">Nível de significância</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2_exemplo.html#p-valor-interpretacao-indicacao-do-r">P-valor / Interpretação / Indicação do R</a></li>
 <li class="toctree-l3"><a class="reference internal" href="2_exemplo.html#sinal-da-variavel">Sinal da variável</a></li>
 <li class="toctree-l3"><a class="reference internal" href="2_exemplo.html#mensurando-o-impacto">Mensurando o impacto</a></li>
 </ul>
@@ -208,12 +210,17 @@
 <li class="toctree-l2"><a class="reference internal" href="3_exemplo.html#realizando-a-regressao">Realizando a Regressão</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3_exemplo.html#interpretando-os-resultados">Interpretando os resultados</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="3_exemplo.html#nivel-de-significancia">Nível de significância</a></li>
+<li class="toctree-l3"><a class="reference internal" href="3_exemplo.html#p-valor-interpretacao-indicacao-do-r">P-valor / Interpretação / Indicação do R</a></li>
 <li class="toctree-l3"><a class="reference internal" href="3_exemplo.html#sinal-da-variavel">Sinal da variável</a></li>
 <li class="toctree-l3"><a class="reference internal" href="3_exemplo.html#mensurando-o-impacto">Mensurando o impacto</a></li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+<p class="caption"><span class="caption-text">Pesquisadores</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pesquisadores.html">Pesquisadores</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Referencial Teórico</span></p>
 <ul>
@@ -292,8 +299,7 @@
 <p>Com base nisso, construímos uma base de dados simulada (base_1), cujo link segue ao final do texto, constituída por 800 docentes, sendo 80 do grupo de tratamento, entre os anos de 2016 e 2019. Na simulação, os anos 2016 e 2017 foram considerados como anteriores à política pública e os anos 2018 e 2019 como posteriores.</p>
 <p>A primeira coluna da base representa o professor (para cada qual foi atribuído um número de 1 a 800) e a segunda coluna é o nível de esforço apurado conforme o indicador do INEP. Já a coluna tratamento registra “sim” para o professor que tenha sido alvo da política pública, ou seja, que tenha recebido o apoio à participação em eventos de natureza científica, tecnológica e de inovação. Por fim, a última coluna registra o ano correspondente ao dado.</p>
 <p>Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:</p>
-<p>esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
-+ β3 · pós_tratamento i + ε i</p>
+<p>esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + β3 · pós_tratamento i + ε i</p>
 <p>Link base_1: <a class="reference external" href="https://drive.google.com/file/d/1piYyjuJbAj9cuayDk2H34MjEOpJFovuy/view?usp=sharing">https://drive.google.com/file/d/1piYyjuJbAj9cuayDk2H34MjEOpJFovuy/view?usp=sharing</a></p>
 </div>
 <div class="section" id="calculando-o-modelo-no-r">
@@ -365,7 +371,13 @@
 <div class="section" id="nivel-de-significancia">
 <h3>Nível de significância<a class="headerlink" href="#nivel-de-significancia" title="Link permanente para este título">¶</a></h3>
 <p>O nível de significância irá dizer a probabilidade de que nossos resultados encontrados coincidam com a realidade. Uma forma de mensurar essa probabilidade é através do p-valor, última coluna da regressão Pr(&gt;|t|). Quanto menor o p-valor, maior será a probabilidade de os resultados condizerem com a realidade. No geral, pode se dividir da seguinte forma:</p>
-<p><strong>em construção</strong></p>
+</div>
+<div class="section" id="p-valor-interpretacao-indicacao-do-r">
+<h3>P-valor / Interpretação / Indicação do R<a class="headerlink" href="#p-valor-interpretacao-indicacao-do-r" title="Link permanente para este título">¶</a></h3>
+<p>Maior que 0,05 / Não significante</p>
+<p>0,01 a 0,05 / Significante / *</p>
+<p>0,001 a 0,01 / Muito significante / **</p>
+<p>Menor que 0,001 / Extremamente significante / <a href="#id1"><span class="problematic" id="id2">**</span></a><a href="#id3"><span class="problematic" id="id4">*</span></a></p>
 <p>Portanto, avaliando o p-valor da variável did, podemos classificá-la como extremamente significante. O próprio software R nos auxilia com essa classificação, bastando observar o número de asteriscos. Então, nesse caso, é possível evidenciar que houve impactos do apoio previsto no Edital nº 10/2019 no esforço docente.</p>
 </div>
 <div class="section" id="sinal-da-variavel">
@@ -375,7 +387,9 @@
 <div class="section" id="mensurando-o-impacto">
 <h3>Mensurando o impacto<a class="headerlink" href="#mensurando-o-impacto" title="Link permanente para este título">¶</a></h3>
 <p>Na coluna Estimate estão os estimadores para cada variável do modelo. A interpretação do impacto da política pode ser realizada por meio da variável did da seguinte maneira: o fato de o docente ter sido contemplado com o apoio à participação em eventos de natureza científica, tecnológica e de inovação eleva indicador de esforço docente em 1,965278.</p>
-</div>
+<div style="text-align: center; margin-bottom: 2em;">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/A5VIBhddm84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div>
 </div>
 </div>
 

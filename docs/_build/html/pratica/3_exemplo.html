@@ -38,7 +38,7 @@
     
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Buscar" href="../search.html" />
-    <link rel="next" title="Referencial Teórico" href="../ref_teorico.html" />
+    <link rel="next" title="Pesquisadores" href="../pesquisadores.html" />
     <link rel="prev" title="Indicador Nota do Enem" href="2_exemplo.html" /> 
 </head>
 
@@ -180,6 +180,7 @@
 <li class="toctree-l2"><a class="reference internal" href="1_exemplo.html#realizando-a-regressao">Realizando a Regressão</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_exemplo.html#interpretando-os-resultados">Interpretando os resultados</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="1_exemplo.html#nivel-de-significancia">Nível de significância</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1_exemplo.html#p-valor-interpretacao-indicacao-do-r">P-valor / Interpretação / Indicação do R</a></li>
 <li class="toctree-l3"><a class="reference internal" href="1_exemplo.html#sinal-da-variavel">Sinal da variável</a></li>
 <li class="toctree-l3"><a class="reference internal" href="1_exemplo.html#mensurando-o-impacto">Mensurando o impacto</a></li>
 </ul>
@@ -194,6 +195,7 @@
 <li class="toctree-l2"><a class="reference internal" href="2_exemplo.html#realizando-a-regressao">Realizando a Regressão</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2_exemplo.html#interpretando-os-resultados">Interpretando os resultados</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="2_exemplo.html#nivel-de-significancia">Nível de significância</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2_exemplo.html#p-valor-interpretacao-indicacao-do-r">P-valor / Interpretação / Indicação do R</a></li>
 <li class="toctree-l3"><a class="reference internal" href="2_exemplo.html#sinal-da-variavel">Sinal da variável</a></li>
 <li class="toctree-l3"><a class="reference internal" href="2_exemplo.html#mensurando-o-impacto">Mensurando o impacto</a></li>
 </ul>
@@ -208,12 +210,17 @@
 <li class="toctree-l2"><a class="reference internal" href="#realizando-a-regressao">Realizando a Regressão</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interpretando-os-resultados">Interpretando os resultados</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#nivel-de-significancia">Nível de significância</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#p-valor-interpretacao-indicacao-do-r">P-valor / Interpretação / Indicação do R</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sinal-da-variavel">Sinal da variável</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mensurando-o-impacto">Mensurando o impacto</a></li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+<p class="caption"><span class="caption-text">Pesquisadores</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pesquisadores.html">Pesquisadores</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Referencial Teórico</span></p>
 <ul>
@@ -290,8 +297,7 @@
 <p>Em nossa simulação, a média escolar varia de 0 a 10. Com base nisso, construímos uma base de dados simulada (base_3), cujo link segue ao final do texto, constituída por 800 alunos, sendo 80 do grupo de tratamento, entre os anos de 2016 e 2019. Na simulação, os anos 2016 e 2017 foram considerados como anteriores à política pública e os anos 2018 e 2019 como posteriores.</p>
 <p>A primeira coluna da base representa o aluno (para cada qual foi atribuído um número de 1 a 800) e a segunda coluna é a média escolar. Já a coluna tratamento registra “sim” para o aluno que tenha sido alvo da política pública, ou seja, que tenha recebido o apoio à participação em eventos de natureza científica, tecnológica e de inovação. Por fim, a última coluna registra o ano correspondente ao dado.
 Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:</p>
-<p>esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
-+ β3 · pós_tratamento i + ε i</p>
+<p>esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + β3 · pós_tratamento i + ε i</p>
 <p>Link base_3: <a class="reference external" href="https://drive.google.com/file/d/1XiUakRplDbPHgj4raiitSBimQmaZ7COd/view?usp=sharing">https://drive.google.com/file/d/1XiUakRplDbPHgj4raiitSBimQmaZ7COd/view?usp=sharing</a></p>
 <div class="section" id="calculando-o-modelo-no-r">
 <h2>Calculando o modelo no R<a class="headerlink" href="#calculando-o-modelo-no-r" title="Link permanente para este título">¶</a></h2>
@@ -364,7 +370,13 @@ Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:</p>
 <div class="section" id="nivel-de-significancia">
 <h3>Nível de significância<a class="headerlink" href="#nivel-de-significancia" title="Link permanente para este título">¶</a></h3>
 <p>O nível de significância irá dizer a probabilidade de que nossos resultados encontrados coincidam com a realidade. Uma forma de mensurar essa probabilidade é através do p-valor, última coluna da regressão Pr(&gt;|t|). Quanto menor o p-valor, maior será a probabilidade de os resultados condizerem com a realidade. No geral, pode se dividir da seguinte forma:</p>
-<p><em>em construção</em></p>
+</div>
+<div class="section" id="p-valor-interpretacao-indicacao-do-r">
+<h3>P-valor / Interpretação / Indicação do R<a class="headerlink" href="#p-valor-interpretacao-indicacao-do-r" title="Link permanente para este título">¶</a></h3>
+<p>Maior que 0,05 / Não significante</p>
+<p>0,01 a 0,05 / Significante / *</p>
+<p>0,001 a 0,01 / Muito significante / **</p>
+<p>Menor que 0,001 / Extremamente significante / <a href="#id1"><span class="problematic" id="id2">**</span></a><a href="#id3"><span class="problematic" id="id4">*</span></a></p>
 <p>Portanto, avaliando o p-valor da variável did, podemos classificá-la como significante. O próprio software R nos auxilia com essa classificação, bastando observar o número de asteriscos, “*” nesse nosso exemplo. Então, nesse caso, é possível evidenciar que houve impactos do apoio previsto no Edital nº 10/2019 na média escolar.</p>
 </div>
 <div class="section" id="sinal-da-variavel">
@@ -386,7 +398,7 @@ Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../ref_teorico.html" class="btn btn-neutral float-right" title="Referencial Teórico" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../pesquisadores.html" class="btn btn-neutral float-right" title="Pesquisadores" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="2_exemplo.html" class="btn btn-neutral float-left" title="Indicador Nota do Enem" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>

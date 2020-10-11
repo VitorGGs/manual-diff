@@ -16,8 +16,7 @@ A primeira coluna da base representa o professor (para cada qual foi atribuído 
 
 Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:
 
-esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
-+ β3 · pós_tratamento i + ε i
+esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + β3 · pós_tratamento i + ε i
 
 Link base_1: https://drive.google.com/file/d/1piYyjuJbAj9cuayDk2H34MjEOpJFovuy/view?usp=sharing
   
@@ -121,7 +120,17 @@ Nível de significância
 
 O nível de significância irá dizer a probabilidade de que nossos resultados encontrados coincidam com a realidade. Uma forma de mensurar essa probabilidade é através do p-valor, última coluna da regressão Pr(>|t|). Quanto menor o p-valor, maior será a probabilidade de os resultados condizerem com a realidade. No geral, pode se dividir da seguinte forma:
 
-**em construção**
+--------------------------------------------
+P-valor / Interpretação / Indicação do R
+--------------------------------------------
+
+Maior que 0,05 / Não significante                  
+
+0,01 a 0,05 / Significante / *
+
+0,001 a 0,01 / Muito significante / **
+
+Menor que 0,001 / Extremamente significante / ***
 
 Portanto, avaliando o p-valor da variável did, podemos classificá-la como extremamente significante. O próprio software R nos auxilia com essa classificação, bastando observar o número de asteriscos. Então, nesse caso, é possível evidenciar que houve impactos do apoio previsto no Edital nº 10/2019 no esforço docente.
 
@@ -136,3 +145,9 @@ Mensurando o impacto
 ---------------------
 
 Na coluna Estimate estão os estimadores para cada variável do modelo. A interpretação do impacto da política pode ser realizada por meio da variável did da seguinte maneira: o fato de o docente ter sido contemplado com o apoio à participação em eventos de natureza científica, tecnológica e de inovação eleva indicador de esforço docente em 1,965278.
+
+.. raw:: html
+
+   <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/A5VIBhddm84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>

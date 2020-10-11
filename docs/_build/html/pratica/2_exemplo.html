@@ -180,6 +180,7 @@
 <li class="toctree-l2"><a class="reference internal" href="1_exemplo.html#realizando-a-regressao">Realizando a Regressão</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1_exemplo.html#interpretando-os-resultados">Interpretando os resultados</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="1_exemplo.html#nivel-de-significancia">Nível de significância</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1_exemplo.html#p-valor-interpretacao-indicacao-do-r">P-valor / Interpretação / Indicação do R</a></li>
 <li class="toctree-l3"><a class="reference internal" href="1_exemplo.html#sinal-da-variavel">Sinal da variável</a></li>
 <li class="toctree-l3"><a class="reference internal" href="1_exemplo.html#mensurando-o-impacto">Mensurando o impacto</a></li>
 </ul>
@@ -194,6 +195,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#realizando-a-regressao">Realizando a Regressão</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interpretando-os-resultados">Interpretando os resultados</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#nivel-de-significancia">Nível de significância</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#p-valor-interpretacao-indicacao-do-r">P-valor / Interpretação / Indicação do R</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sinal-da-variavel">Sinal da variável</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mensurando-o-impacto">Mensurando o impacto</a></li>
 </ul>
@@ -208,12 +210,17 @@
 <li class="toctree-l2"><a class="reference internal" href="3_exemplo.html#realizando-a-regressao">Realizando a Regressão</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3_exemplo.html#interpretando-os-resultados">Interpretando os resultados</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="3_exemplo.html#nivel-de-significancia">Nível de significância</a></li>
+<li class="toctree-l3"><a class="reference internal" href="3_exemplo.html#p-valor-interpretacao-indicacao-do-r">P-valor / Interpretação / Indicação do R</a></li>
 <li class="toctree-l3"><a class="reference internal" href="3_exemplo.html#sinal-da-variavel">Sinal da variável</a></li>
 <li class="toctree-l3"><a class="reference internal" href="3_exemplo.html#mensurando-o-impacto">Mensurando o impacto</a></li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+<p class="caption"><span class="caption-text">Pesquisadores</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pesquisadores.html">Pesquisadores</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Referencial Teórico</span></p>
 <ul>
@@ -289,8 +296,7 @@
 <p>Em nossa simulação, a nota varia de 0 a 1000. Com base nisso, construímos uma base de dados simulada (base_2), cujo link segue ao final do texto, constituída por 800 alunos, sendo 80 do grupo de tratamento, entre os anos de 2018 e 2019. Na simulação, o ano 2018 foi considerado como anterior à política pública e o ano de 2019 como posterior.</p>
 <p>A primeira coluna da base representa o aluno (para cada qual foi atribuído um número de 1 a 800) e a segunda coluna é a nota obtida no Enem. Já a coluna tratamento registra “sim” para o aluno que tenha sido alvo da política pública, ou seja, que tenha recebido o apoio à participação em eventos de natureza científica, tecnológica e de inovação. Por fim, a última coluna registra o ano correspondente ao dado.
 Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:</p>
-<p>esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i +
-+ β3 · pós_tratamento i + ε i</p>
+<p>esforço docente = α + β1 · grupo_tratado i · pós_tratamento t + β2 · grupo_tratado i + β3 · pós_tratamento i + ε i</p>
 <p>Link base_2: <a class="reference external" href="https://drive.google.com/file/d/1mmDW8eV21lOfeezXghK-sRkLw3xYK6Iv/view?usp=sharing">https://drive.google.com/file/d/1mmDW8eV21lOfeezXghK-sRkLw3xYK6Iv/view?usp=sharing</a></p>
 <div class="section" id="calculando-o-modelo-no-r">
 <h2>Calculando o modelo no R<a class="headerlink" href="#calculando-o-modelo-no-r" title="Link permanente para este título">¶</a></h2>
@@ -363,7 +369,13 @@ Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:</p>
 <div class="section" id="nivel-de-significancia">
 <h3>Nível de significância<a class="headerlink" href="#nivel-de-significancia" title="Link permanente para este título">¶</a></h3>
 <p>O nível de significância irá dizer a probabilidade de que nossos resultados encontrados coincidam com a realidade. Uma forma de mensurar essa probabilidade é através do p-valor, última coluna da regressão Pr(&gt;|t|). Quanto menor o p-valor, maior será a probabilidade de os resultados condizerem com a realidade. No geral, pode se dividir da seguinte forma:</p>
-<p><em>em construção</em></p>
+</div>
+<div class="section" id="p-valor-interpretacao-indicacao-do-r">
+<h3>P-valor / Interpretação / Indicação do R<a class="headerlink" href="#p-valor-interpretacao-indicacao-do-r" title="Link permanente para este título">¶</a></h3>
+<p>Maior que 0,05 / Não significante</p>
+<p>0,01 a 0,05 / Significante / *</p>
+<p>0,001 a 0,01 / Muito significante / **</p>
+<p>Menor que 0,001 / Extremamente significante / <a href="#id1"><span class="problematic" id="id2">**</span></a><a href="#id3"><span class="problematic" id="id4">*</span></a></p>
 <p>Portanto, avaliando o p-valor da variável did, podemos classificá-la não estatisticamente significante. Assim, nesse caso, não é possível afirmar que houve impactos do apoio previsto no Edital nº 10/2019 na nota do Enem.</p>
 </div>
 <div class="section" id="sinal-da-variavel">
@@ -373,7 +385,9 @@ Sob o ponto de vista econométrico, o modelo diff-in-diff é o seguinte:</p>
 <div class="section" id="mensurando-o-impacto">
 <h3>Mensurando o impacto<a class="headerlink" href="#mensurando-o-impacto" title="Link permanente para este título">¶</a></h3>
 <p>Como o resultado foi não significante, nada mais pode-se afirmar sobre os resultados do modelo.</p>
-</div>
+<div style="text-align: center; margin-bottom: 2em;">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/Sl5IJaIJyOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div>
 </div>
 </div>
 

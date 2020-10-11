@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Bem-vindos! &mdash; documentação Home </title>
+  <title>Pesquisadores &mdash; documentação Home </title>
   
 
   
@@ -38,7 +38,8 @@
     
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Buscar" href="search.html" />
-    <link rel="next" title="Motivação" href="intro/motivacao.html" /> 
+    <link rel="next" title="Referencial Teórico" href="ref_teorico.html" />
+    <link rel="prev" title="Indicador Média Escolar" href="pratica/3_exemplo.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -52,7 +53,7 @@
           
 
           
-            <a href="#" class="icon icon-home" alt="Documentation Home"> Home
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Home
           
 
           
@@ -218,8 +219,8 @@
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Pesquisadores</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="pesquisadores.html">Pesquisadores</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pesquisadores</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Referencial Teórico</span></p>
 <ul>
@@ -239,7 +240,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
         
       </nav>
 
@@ -268,15 +269,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Bem-vindos!</li>
+      <li>Pesquisadores</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+            <a href="_sources/pesquisadores.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
           
         
       </li>
@@ -289,36 +290,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="bem-vindos">
-<h1>Bem-vindos!<a class="headerlink" href="#bem-vindos" title="Link permanente para este título">¶</a></h1>
-<p>Este é um guia de como mensurar os impactos das políticas da FAP-DF. Nele você irá aprender a utilizar o software “R”, umas das principais ferramentas utilizadas pelos cientistas de dados.</p>
-<p>É importante lembrar que a implementação de programas públicos demanda recursos cada vez mais escassos tornando a necessidade de avaliações de eficiência e efetividade de sua aplicação. Os recursos públicos apresentam um “custo de oportunidade”. Em economia, o custo de oportunidade é um conceito teórico que mede o custo daquilo que se poderia fazer em vez daquilo que se está fazendo. Nesse sentido, a avaliação de programas públicos permite mensurar o impacto dessa política, auxiliando a comparação com o custo de oportunidade a fim de:</p>
+  <div class="section" id="pesquisadores">
+<h1>Pesquisadores<a class="headerlink" href="#pesquisadores" title="Link permanente para este título">¶</a></h1>
 <blockquote>
-<div><ol class="arabic simple">
-<li><p>escolher o melhor programa dentre várias possibilidades;</p></li>
-<li><p>descontinuar programas que não têm um impacto/benefício significativo;</p></li>
-<li><p>evitar acabar com programas que têm impacto/benefício expressivos;</p></li>
-<li><p>melhorar o desenho do programa, sua custo-efetividade e eficácia; e</p></li>
-<li><p>decidir sobre a replicação ou ampliação do programa.</p></li>
-</ol>
+<div><p>Eric Lisboa Coda Dias</p>
+<p>Marcelo Estrela Fiche</p>
+<p>Roberto de Góes Ellery Júnior</p>
+<p>Vitor Gabriel</p>
 </div></blockquote>
-<p>Mais especificamente, as avaliações de impacto medem mudanças em um resultado de interesse atribuídas a uma intervenção (tratamento/programa) específica. O foco se dá nos resultados (como desempenho escolar e emprego) e, somente em alguns casos, nos produtos (como atendimentos, matrículas e formandos). Para tanto, é necessário dados de um grupo exposto ao programa (tratados) e de um grupo não exposto (controle), além de um corte temporal de antes e depois da implantação do programa.</p>
-<p>Neste guia, a fim de facilitar o entendimento, iremos apresentar uma sugestão de avaliação da efetividade da iniciativa prevista no Edital nº 10/2019 da FAPDF (<a class="reference external" href="http://www.fap.df.gov.br/wp-content/uploads/2019/05/Edital-n%C2%BA-10-2019.pdf">http://www.fap.df.gov.br/wp-content/uploads/2019/05/Edital-n%C2%BA-10-2019.pdf</a>) que se refere à seleção pública de propostas de apoio à participação em eventos de natureza científica, tecnológica e de inovação para docentes da rede pública de ensino do Distrito Federal.</p>
-<p>Iremos sugerir a utilização de três indicadores: esforço docente, nota do Enem e média escolar. Por meio do modelo econométrico chamado <em>diferenças em diferenças</em> ou diff in diff, vamos mensurar os impactos da política previsa no Edital em análise e interpretar os resultados.</p>
-<div style="text-align: center; margin-bottom: 2em;">
- <iframe width="560" height="315" src="https://www.youtube.com/embed/Zz26qccH3qo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div><div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
 </div>
 
 
@@ -329,8 +308,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="intro/motivacao.html" class="btn btn-neutral float-right" title="Motivação" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="ref_teorico.html" class="btn btn-neutral float-right" title="Referencial Teórico" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="pratica/3_exemplo.html" class="btn btn-neutral float-left" title="Indicador Média Escolar" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
       
     </div>
   
