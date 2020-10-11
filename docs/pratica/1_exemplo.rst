@@ -145,3 +145,9 @@ Mensurando o impacto
 ---------------------
 
 Na coluna Estimate estão os estimadores para cada variável do modelo. A interpretação do impacto da política pode ser realizada por meio da variável did da seguinte maneira: o fato de o docente ter sido contemplado com o apoio à participação em eventos de natureza científica, tecnológica e de inovação eleva indicador de esforço docente em 1,965278.
+
+.. raw:: html
+
+   <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=A5VIBhddm84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
